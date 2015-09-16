@@ -114,6 +114,19 @@ function quidus_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	$sb_footer = array(
+		'name'          => __( 'Información footer', 'theme_text_domain' ),
+		'id'            => 'info_footer',
+		'description'   => 'Cambie acá la información de su pie de página',
+		'class'         => 'texto_footer',
+		'before_widget' => '<p>',
+		'after_widget'  => '</p>',
+		'before_title'  => '<h2 class="widgettitle">',
+		'after_title'   => '</h2>'
+	);
+
+	register_sidebar( $sb_footer );
 	
 	
 	if ( get_theme_mod('quidus_enable_footer_widgets') == 1) {

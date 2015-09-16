@@ -59,14 +59,9 @@
 <!-- .site -->
 
 <footer id="colophon" class="site-footer" role="contentinfo">
-    <p class="site-info">
-		<b>
-			<a href="http://www.telemedellin.tv" title="Página oficial de Telemedellín" class="tm">Telemedellin.tv</a> - #EstoyDeFeria<br>
-		</b>
-        <span class="icon-left"></span>
-		<span class="icon-right"></span>
-		Sitio web no oficial realizado por Telemedellín con fines informativos y de apoyo para el cubrimiento de la Feria de las Flores 2015.
-    </p>
+    <div class="site-info">
+    	<?php dynamic_sidebar("info_footer" ); ?>
+    </div>
     <!-- .site-info -->
 </footer>
 <!-- .site-footer -->

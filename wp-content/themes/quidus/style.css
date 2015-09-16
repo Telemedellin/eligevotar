@@ -186,8 +186,7 @@ html {
 }
 
 body {
-	background-color: #FBEA28;
-	background-image: url(img/textura.png);
+	background-color: #12203f;
 	/*background-repeat: no-repeat;*/
 	/*background-attachment: fixed;*/
 	background-position: center top;
@@ -1967,9 +1966,9 @@ max-height:auto;
 
 	position: relative;
 
-	background-color: #691283;
+	background-color: #f2f2e4;
 
-	color: #fff;
+	color: #1b3059;
 
 	text-decoration: none;
 
@@ -1978,12 +1977,15 @@ max-height:auto;
 	/*font-weight: bold;*/
 
 	padding: 0.75em 0.75em;
+	font-weight: 700;
 
 }
 
 
 .main-navigation a:hover{
-	/*background-color: #d94601;*/
+	background-color: #da7f30;
+	color: #1b3059;
+	text-decoration: none;
 }
 
 
@@ -2159,7 +2161,7 @@ max-height:auto;
 
 	-webkit-transition:0.5s;
 
-	color: #fff;
+	color: #122140;
 
 }
 
@@ -3213,6 +3215,81 @@ img.aligncenter {
 
 }
 
+.logo {
+
+	width: 100%;
+	text-align: center;
+	position: relative;
+}
+
+.logo > a {
+	display: block;
+	height: 285px;
+	text-align: center;
+}
+
+
+.logo-img {
+
+	/*background-image: url(img/banner.jpg);*/
+
+	/*background-size: 100% 100%;*/
+
+	width: 930px;
+
+	max-height: 478px;
+
+}
+
+
+
+.social {
+
+	width: 100%;
+
+	height: 40px;
+
+	position: absolute;
+	bottom: -20px;
+
+}
+
+.social ul
+{
+	margin: 0;
+	padding: 0;
+}
+
+.social ul li
+{
+	display: inline-block;
+	list-style: none;
+	padding: 7px;
+}
+
+.social a
+{
+	color: #fff;
+	font-size: 30px;
+}
+
+.social a:hover
+{
+	text-decoration: none;
+	color: rgba(256,256,256, 0.7);
+}
+
+
+
+.redes{
+
+	width: 71%;
+
+	margin: 0 auto;
+
+	text-align: right;
+
+}
 
 
 
@@ -5495,21 +5572,13 @@ padding-top: 1.5em;
 
 	bottom:0;
 
-	/*border-top:1px solid rgba(60,60,60,0.2);*/
-
-	/*background: url(img/bg-footer.jpg);*/
-
-	background-color: #F1E118;
-
-	/*height: 70px;*/
-
 }
 
 
 
 .site-info {
 	margin: 5px 0px 0px 0px;
-	color: #691283;
+	color: #fff;
 	display: block;
     width: 1100px;
     height: auto;
@@ -5520,14 +5589,17 @@ padding-top: 1.5em;
 
 
 
-.site-info a,
-
-.site-info a:hover
+.site-info a
 
 {
 
-	color: #691283;
+	color: #fff;
+	text-decoration: none;
 
+}
+
+.site-info a:hover{
+	color: #da7f30;
 }
 
 
@@ -6120,57 +6192,6 @@ p > video {
 
 
 
-.logo {
-
-	width: 100%;
-	text-align: center;
-}
-
-.logo > a {
-	display: block;
-	height: 320px;
-}
-
-
-.logo-img {
-
-	/*background-image: url(img/banner.jpg);*/
-
-	/*background-size: 100% 100%;*/
-
-	width: 930px;
-
-	max-height: 478px;
-
-}
-
-
-
-.social {
-
-	width: 100%;
-
-	height: 40px;
-
-	/*background-color: #BFBFBF;*/
-
-	/*background: url(img/bg-redes.jpg);*/
-
-}
-
-
-
-.redes{
-
-	width: 71%;
-
-	margin: 0 auto;
-
-	text-align: right;
-
-}
-
-
 
 .bg-content {
 
@@ -6242,7 +6263,7 @@ p > video {
 
 	display: block;
 
-	background-color: #36ADB8;
+	background-color: transparent;
 
 	float: left;
 
@@ -6250,7 +6271,7 @@ p > video {
 
 	margin-top: 20px;
 
-	border: 0px solid #fff;
+	border: 1px solid #fff;
 
 }
 
@@ -7888,7 +7909,13 @@ p > video {
 	.site-info {
 		width: 100%;
 	}
-.logo > a {height:200px;}
+	.logo > a {
+		height:115px;
+	}
+	.logo-img{
+		width: auto;
+		max-height: 125px;
+	}
 }
 
 
@@ -7944,7 +7971,11 @@ p > video {
 	}
 
 	.logo > a {
-		height: 285px;
+		height: 180px;
+	}
+	.logo-img{
+		width: auto;
+		max-height: 195px;
 	}
 
 	.bg-content {
@@ -9087,7 +9118,14 @@ p > video {
 
 	
 	.logo > a {
-		height: 350px;
+		height: 250px;
+	}
+	.social{
+		bottom: -10px;
+	}
+	.logo-img{
+		max-height: 260px;
+		width: auto;
 	}
 
 
@@ -10502,7 +10540,7 @@ padding-bottom:1em;
 
 {
 
-	color: #fff;
+	color: #122140;
 
 }
 
@@ -10515,15 +10553,16 @@ padding-bottom:1em;
 
 #site-navigation > div > .nav-menu > .menu-item-has-children > .sub-menu > li > a
 {
-	color: #691283;
-	background-color: #36ADB8;
+	color: #fff;
+	background-color: #59594f;
 	font-style: italic;
-	font-weight: bold;
+	font-weight: 100;
 }
 
 #site-navigation > div > .nav-menu > .menu-item-has-children > .sub-menu > li > a:hover
 {
-	/*background-color: #D43800;*/
+	background-color: #da7f30;
+	color: #122140;
 }
 
 #site-navigation > div > .nav-menu > .menu-item-has-children > .sub-menu  > .menu-item-has-children > .sub-menu > li > a
@@ -10559,30 +10598,6 @@ article > .entry-content a:hover
 	color: #fff;
 }
 
-.social ul
-{
-	margin: 0;
-	padding: 0;
-}
-
-.social ul li
-{
-	display: inline-block;
-	list-style: none;
-	padding: 7px;
-}
-
-.social a
-{
-	color: #691283;
-	font-size: 30px;
-}
-
-.social a:hover
-{
-	text-decoration: none;
-	color: #F08951;
-}
 
 article > .entry-header
 {

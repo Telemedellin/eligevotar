@@ -81,13 +81,11 @@
 
 		<a href="<?php echo get_option('siteurl'); ?>">
 
-			<img class="logo-img" src="http://estoydeferia.telemedellin.tv/wp-content/uploads/2015/07/cabezoteferia.png">
+			<img class="logo-img" src="<?php bloginfo("template_directory"); ?>/img/header_elige-votar-telemedellin.jpg" alt="Elijo votar">
 
 		</a>
 
-	</div>
-
-	<div class="social">
+		<div class="social">
 
 		<div class="redes">
 
@@ -105,6 +103,8 @@
 
 		</div>
 
+	</div>
+	
 	</div>
 
 </header>
