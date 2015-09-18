@@ -73,7 +73,7 @@
 
 
 
-<body <?php body_class(); ?>>
+<body class="site-bg" <?php body_class(); ?>>
 
 <header>
 
@@ -81,7 +81,7 @@
 
 		<a href="<?php echo get_option('siteurl'); ?>">
 
-			<img class="logo-img" src="<?php bloginfo("template_directory"); ?>/img/header_elige-votar-telemedellin.jpg" alt="Elijo votar">
+			<img class="logo-img" src="<?php global $redux_tm;	echo $redux_tm['header-image']['url']; ?>" alt="Elijo votar">
 
 		</a>
 

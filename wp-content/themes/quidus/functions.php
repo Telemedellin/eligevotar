@@ -381,3 +381,6 @@ add_action( 'wp_head', 'quidus_javascript_detection', 0 );
  */
 require get_template_directory() . '/panel/quidus-theme-documentaion.php'; 
 require get_template_directory() . '/inc/TGM/quidus-tgm-activate.php';
+
+require_once (dirname(__FILE__) . '/sample/barebones-config.php');
+ 
