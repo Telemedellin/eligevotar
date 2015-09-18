@@ -187,7 +187,7 @@
     }
 
     // Add content after the form.
-    $args['footer_text'] = __( '<p>Utilice estas opciones con responsabilidad y no moleste a los de El Poblado</p>', 'redux-framework-demo' );
+    $args['footer_text'] = __( '<p>Utilice estas opciones con responsabilidad.</p>', 'redux-framework-demo' );
 
     Redux::setArgs( $opt_name, $args );
 
@@ -247,8 +247,8 @@
                 'id'       => 'header-image',
                 'type'     => 'media',
                 'title'    => __( 'Seleccione la imagen', 'redux-framework-demo' ),
-                'desc'     => __( 'Recuerde que esta imagen debe ser así asa.', 'redux-framework-demo' ),
-                'subtitle' => __( 'El tamaño debe ser así.', 'redux-framework-demo' ),
+                'desc'     => __( 'Recuerde que esta imagen debe estar optimizada para que tenga el menor peso posible sin perder calidad.', 'redux-framework-demo' ),
+                'subtitle' => __( 'El tamaño debe ser 1150 px de ancho por 390 px de alto', 'redux-framework-demo' ),
                 'hint'     => array(
                     'content' => 'Esta es la información de ayuda',
                 ),
@@ -269,7 +269,7 @@
                 'type'          => 'background',
                 'title'         => __( 'Selecciona el fondo', 'redux-framework-demo' ),
                 'subtitle'      => __( 'Puede ser un color o una imagen', 'redux-framework-demo' ),
-                'desc'          => __( 'Esta es la descripción', 'redux-framework-demo' ),
+                'desc'          => __( 'Recuerde que esta imagen debe estar optimizada para que tenga el menor peso posible sin perder calidad.' ),
                 'output'        => array('.site-bg'),
                 'preview_media' => true,
             ),
