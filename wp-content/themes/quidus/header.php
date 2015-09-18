@@ -75,13 +75,15 @@
 
 <body class="site-bg" <?php body_class(); ?>>
 
+<?php global $redux_tm; ?>
+
 <header>
 
 	<div class="logo">
 
 		<a href="<?php echo get_option('siteurl'); ?>">
-
-			<img class="logo-img" src="<?php global $redux_tm;	echo $redux_tm['header-image']['url']; ?>" alt="Elijo votar">
+		
+			<img class="logo-img" src="<?php echo $redux_tm['header-image']['url']; ?>" alt="Elijo votar">
 
 		</a>
 
