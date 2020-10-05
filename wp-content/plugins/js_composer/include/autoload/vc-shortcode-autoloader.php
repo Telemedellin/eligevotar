@@ -45,11 +45,7 @@ class VcShortcodeAutoloader {
 	 */
 	public static function includeClass( $class ) {
 		$class = strtolower( $class );
-		$files = array();
-
-		if ( self::$config['classmap'] ) {
-			$files = isset( self::$config['classmap'][ $class ] ) ? self::$config['classmap'][ $class ] : array();
-		}
+		$files = isset( self::$config['classmap'][ $class ] ) ? self::$config['classmap'][ $class ] : array();
 
 		if ( $files ) {
 			foreach ( $files as $k => $file ) {
